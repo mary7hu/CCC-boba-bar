@@ -15,7 +15,7 @@ class NavComponent extends HTMLElement {
                 <a href="home.html">Home</a>
                 <a href="menu.html">Menu</a>
                 <a href="about.html">About</a>
-                <img src="assets/penguin-logo.webp" alt="Penguin Logo" height="64">
+                <img src="assets/penguin.webp" alt="Penguin Logo" height="64">
                 <a href="catering.html">Catering</a>
                 <a href="Merch">Merch</a>
                 <a href="Career">Career</a>

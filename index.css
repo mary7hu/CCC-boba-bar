@@ -1,6 +1,11 @@
+:root {
+    --primary-purple: #938ACB;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'MoonBold';
 }
 
 @font-face {
@@ -36,21 +41,51 @@ nav-component {
 
 h1 {
     color: #FFF;
+    width: fit-content;
     font-size: 76px;
     position: relative;
     left: 128px;
     top: 203px;
-    font-family: 'MoonBold';
     letter-spacing: 2px;
 }
 
-h2 {
+#home p {
     color: #FFF;
     width: 275px;
     font-size: 32px;
     position: relative;
     left: 128px;
     top: 226px;
-    font-family: 'MoonBold';
     letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    height: 612px;
+    align-items: center;
+    padding-left: 8.8vw;
+}
+
+nav a {
+    width: 24.3vw;
+    height: 340px;
+    box-shadow: 4px 4px 0px 0px #BA9EC9, 8px 8px 0px 0px #6467AE;
+    border: 1.4px solid var(--primary-purple, #938ACB);
+    border-radius: 43.6px;
+    margin-right: 4.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/cloud.png);
+    text-decoration: none;
+    color: #FFF;
+    font-size: 2.2vw;
+}
+
+nav a span {
+    margin-top: 40px;
+    background-color: var(--primary-purple, #938ACB);
+    padding: 16px 32px;
+    border-radius: 10.9px;
 }
