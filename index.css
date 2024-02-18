@@ -8,6 +8,16 @@
     src: url(assets/Nunito-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'MoonLight';
+    src: url(assets/Moon-Light.otf);
+}
+
+@font-face {
+    font-family: 'MoonBold';
+    src: url(assets/Moon-Bold.otf);
+}
+
 nav-component {
     display: grid;
     grid-template-columns: 13.8vw auto 11.2vw;
@@ -21,7 +31,7 @@ nav-component {
 
 #home {
     height: 666px;
-    background-image: url(assets/home-image.png);
+    background-image: url(assets/home-image.webp);
 }
 
 h1 {
