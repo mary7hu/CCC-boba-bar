@@ -88,4 +88,110 @@ nav a span {
     background-color: var(--primary-purple, #938ACB);
     padding: 16px 32px;
     border-radius: 10.9px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-purple, #938ACB);
+    font-size: 64px;
+    border-bottom: 3px solid #C9CBE3;
+    border-top: 3px solid #C9CBE3;
+    padding: 5px 0;
+    letter-spacing: 2px;
+}
+
+section > div {
+    display: flex;
+    width: 82.4vw;
+    align-items: center;
+}
+
+section > div::before {
+    content: "";
+    height: 3px;
+    background-color: #C9CBE3;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+section > div::after {
+    content: "";
+    height: 3px;
+    background-color: #C9CBE3;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+#customer-favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 740px;
+}
+
+#customer-favorites ol {
+    display: flex;
+    list-style-type: none;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 37px;
+}
+
+#customer-favorites li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#customer-favorites li > img:first-child {
+    position: relative;
+    right: 103.5px;
+    top: 89px;
+}
+
+#customer-favorites li > img:nth-child(2) {
+    border-radius: 8px;
+}
+
+#customer-favorites ol div {
+    font-size: 24px;
+    width: 240px;
+    text-align: center;
+    margin-top: 16px;
+    letter-spacing: 1px;
+}
+
+#opportunities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#opportunities p {
+    width: 82.4vw;
+    font-family: 'Nunito';
+    letter-spacing: 0px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 56px;
+}
+
+#opportunities a {
+    margin-top: 56px;
+    background-color: var(--primary-purple, #938ACB);
+    padding: 24px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 2.2vw;
+    letter-spacing: 1px;
+    margin-bottom: 136px;
+}
+
+#boba-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 588px; */
 }
