@@ -1,0 +1,170 @@
+/* Desktop */
+
+/* html {
+    font-size: 62.5%;
+} */
+
+/* For nav component js */
+nav-component {
+    display: grid;
+    grid-template-columns: 13.8vw auto 11.2vw;
+    background: linear-gradient(180deg, #F3ECFF 42.71%, #F1EFF3 100%);
+    height: 80px;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Nunito';
+    font-size: 20px;
+}
+
+body { 
+    margin: 0;
+    /* insert font family here once decided */
+}
+
+section {
+    /* On figma there are margins of 127px */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu_heading {
+    color: var(--Primary-Purple, #938ACB);
+    font-family: Moon;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    text-align: center;
+    margin-top: 47px;
+}
+
+.order_online {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.order_online .text {
+    color: var(--Primary-Purple, #938ACB);
+    font-family: Nunito;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.menu_pdf_link {
+    background-color: #94D9D6;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 7.5px 40px;
+
+    color: var(--Primary-Grey, #4F4B4C);
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+
+.locations .convoy {
+    background-image: url("/assets/menu/convoy_location.svg");
+}
+
+.locations .national_city {
+    background-image: url("/assets/menu/national_city_location.svg");
+}
+
+.locations .national_city, .locations .convoy {
+    width: 570px;
+    height: 291px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.convoy .text, .national_city .text {
+    color: #FFF;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.50);
+    text-align: center;
+
+    font-family: Moon;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.convoy .text {
+    margin-bottom: 75px;
+}
+
+.national_city .text {
+    margin-bottom: 13px;
+}
+
+.order_btn {
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    padding: 10px 40px;
+    margin-bottom: 35px;
+
+    border-radius: 20px;
+    border: 4px solid var(--Secondary-Purple, #C9C4E5);
+    box-shadow: 0px 4px 4px 0px rgba(157, 157, 157, 0.25);
+}
+
+a.order_btn:hover {
+    background: var(--Secondary-Purple, #C9C4E5);
+    border-color: #C9C4E5;
+    color: var(--Primary-Grey, #4F4B4C);
+}
+
+a.order_btn:active {
+    background: var(--Primary-Purple, #938ACB);
+    color: var(--Primary-Grey, #4F4B4C);
+    border-color: #938ACB;
+}
+
+.filter {
+    display: flex;
+    /* gap: 11px; */
+    justify-content: space-evenly;
+    margin-top: 26px;
+}
+
+.filter_btn {
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid #000;
+
+    padding: 12px 25px;
+
+    color: #000;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+  
