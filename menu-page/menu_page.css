@@ -4,6 +4,27 @@
     font-size: 62.5%;
 } */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Adding fonts from assets */
+@font-face {
+    font-family: 'Nunito';
+    src: url(assets/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MoonLight';
+    src: url(assets/Moon-Light.otf);
+}
+
+@font-face {
+    font-family: 'MoonBold';
+    src: url(assets/Moon-Bold.otf);
+}
+
 /* For nav component js */
 nav-component {
     display: grid;
@@ -21,7 +42,7 @@ body {
     /* insert font family here once decided */
 }
 
-section {
+main {
     /* On figma there are margins of 127px */
     max-width: 1200px;
     margin: 0 auto;
@@ -29,11 +50,12 @@ section {
 
 .menu_heading {
     color: var(--Primary-Purple, #938ACB);
-    font-family: Moon;
+    font-family: MoonBold;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    letter-spacing: 2px;
 
     text-align: center;
     margin-top: 47px;
@@ -76,11 +98,11 @@ section {
 }
 
 .locations .convoy {
-    background-image: url("/assets/menu/convoy_location.svg");
+    background-image: url("/CCC-boba-bar/menu-page/assets/menu/convoy_location.svg");
 }
 
 .locations .national_city {
-    background-image: url("/assets/menu/national_city_location.svg");
+    background-image: url("/CCC-boba-bar/menu-page/assets/menu/national_city_location.svg");
 }
 
 .locations .national_city, .locations .convoy {
@@ -95,14 +117,16 @@ section {
 
 .convoy .text, .national_city .text {
     color: #FFF;
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.50);
+    /* Note: changed shadow color to be less harsh */
+    text-shadow: 0px 4px 6px rgba(45, 45, 45, 0.5);
     text-align: center;
 
-    font-family: Moon;
+    font-family: MoonBold;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    letter-spacing: 2px;
 
     margin-left: 110px;
     margin-right: 110px;
@@ -148,8 +172,9 @@ a.order_btn:active {
 .filter {
     display: flex;
     /* gap: 11px; */
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 26px;
+    margin-bottom: 84px;
 }
 
 .filter_btn {
@@ -167,4 +192,108 @@ a.order_btn:active {
     line-height: normal;
 }
 
+.menu_sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 63px;
+    margin-top: 52px;
+}
+
+.section_header::before {
+    content: "";
+    height: 3px;
+    background-color: #C9CBE3;
+    /* margin-right: 20px; */
+    flex-grow: 1;
+}
+
+.section_header::after {
+    content: "";
+    height: 3px;
+    background-color: #C9CBE3;
+    /* margin-left: 20px; */
+    flex-grow: 1;
+}
+
+h2 {
+    text-align: center;
+    font-family: MoonBold;
+    color: var(--primary-purple, #938ACB);
+    font-size: 64px;
+    border-bottom: 3px solid #C9CBE3;
+    border-top: 3px solid #C9CBE3;
+    padding: 5px 0;
+    letter-spacing: 2px;
+}
+
+.section_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item_card {
+    width: 368px;
+    height: 563px;
+    margin-bottom: 84px;
+}
+
+.item_title {
+    color: #000;
+    font-family: Nunito;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.item_desc {
+    color: #000;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+.grid_heading {
+    color: #000;
+    font-family: Nunito;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 28px;
+}
+
+h3 {
+    color: var(--Primary-Grey, #4F4B4C);
+    font-family: MoonBold;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.grid-menu {
+    color: var(--Primary-Grey, #4F4B4C);
+    font-family: Nunito;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+
+    margin-bottom: 84px;
+}
+  
   
