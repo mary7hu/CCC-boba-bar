@@ -1,5 +1,6 @@
 :root {
     --primary-purple: #938ACB;
+    --primary-grey: #4F4B4C;
 }
 
 * {
@@ -184,7 +185,7 @@ section > div::after {
     border-radius: 16px;
     text-decoration: none;
     color: #FFF;
-    font-size: 2.2vw;
+    font-size: 32px;
     letter-spacing: 1px;
     margin-bottom: 136px;
 }
@@ -193,5 +194,71 @@ section > div::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 588px; */
+    height: 989px;
+}
+
+#find-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 112px;
+}
+
+#find-us address {
+    display: grid;
+    width: 82.4vw;
+    grid-template-columns: [line1] 50% [line2] 44% [line3];
+    grid-template-rows: [row1] auto [row2] auto [row3] auto [row4] auto [row5];
+    column-gap: 62px;
+    align-items: center;
+    font-style: normal;
+    margin-top: 72px;
+}
+
+address > a {
+    grid-column-start: line1;
+    grid-column-end: line2;
+    grid-row-start: row1;
+    grid-row-end: row5;
+}
+
+address > a img {
+    width: 100%;
+}
+
+address > p {
+    color: var(--primary-purple, #938ACB);
+    font-size: 2.2vw;
+    text-align: center;
+}
+
+address .location {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+address .phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+address div p {
+    color: var(--primary-grey, #4F4B4C);
+    font-family: 'Nunito';
+    font-size: 1.7vw;
+}
+
+address .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+address .links a {
+    width: 42%;
+}
+
+address .links img {
+    width: 100%;
 }
