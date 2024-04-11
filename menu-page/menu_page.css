@@ -185,11 +185,25 @@ a.order_btn:active {
     padding: 12px 25px;
 
     color: #000;
+    background-color: #ffffff;
     font-family: Nunito;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* use not() to make sure hover effect only applies to nonselected btns */
+.filter_btn:not(.selected):hover {
+    color: #938ACB;
+    border-color: #938ACB; 
+}
+
+/* apply class in js when button is pressed and will remain active */
+.selected {
+    color: #ffffff;
+    background-color: #938ACB;
+    border-color: #938ACB;
 }
 
 .menu_sections {
@@ -295,5 +309,5 @@ h3 {
 
     margin-bottom: 84px;
 }
-  
+
   

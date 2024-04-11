@@ -75,3 +75,41 @@ function loadPuffleItems() {
 document.addEventListener("DOMContentLoaded", function() {
     loadPuffleItems();
 });
+
+
+
+// Filter Buttons:
+document.addEventListener("DOMContentLoaded", function() {
+    const filterButtons = document.querySelectorAll('.filter_btn');
+    const menuSections = document.querySelectorAll('.menu_sections');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-target');
+
+            // if button is selected, deselect and show full menu
+            if (button.classList.contains('selected')) {
+                button.classList.remove('selected');
+                menuSections.forEach(section => {
+                    section.style.display = 'flex';
+                });
+                return;
+            }
+            
+            // Remove the 'selected' class from all filter buttons
+            filterButtons.forEach(btn => {
+                btn.classList.remove('selected');
+            });
+
+            // Hide all menu sections
+            menuSections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the menu section corresponding to the clicked button
+            document.getElementById(targetId).style.display = 'flex';
+            // Add the "selected" class to the current button so that css is updated
+            button.classList.add('selected');
+        });
+    });
+});
