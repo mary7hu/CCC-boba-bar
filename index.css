@@ -26,7 +26,7 @@
 
 nav-component {
     display: grid;
-    grid-template-columns: 13.8vw auto 11.2vw;
+    grid-template-columns: 13.8vw auto 13.8vw;
     background: linear-gradient(180deg, #F3ECFF 42.71%, #F1EFF3 100%);
     height: 80px;
     align-items: center;
@@ -60,14 +60,14 @@ h1 {
     letter-spacing: 1px;
 }
 
-nav {
+main nav {
     display: flex;
     height: 612px;
     align-items: center;
     padding-left: 8.8vw;
 }
 
-nav a {
+main nav a {
     width: 24.3vw;
     height: 340px;
     box-shadow: 4px 4px 0px 0px #BA9EC9, 8px 8px 0px 0px #6467AE;
@@ -84,7 +84,7 @@ nav a {
     font-size: 2.2vw;
 }
 
-nav a span {
+main nav a span {
     margin-top: 40px;
     background-color: var(--primary-purple, #938ACB);
     padding: 16px 32px;
@@ -215,50 +215,57 @@ section > div::after {
     margin-top: 72px;
 }
 
-address > a {
+#find-us address > a {
     grid-column-start: line1;
     grid-column-end: line2;
     grid-row-start: row1;
     grid-row-end: row5;
 }
 
-address > a img {
+#find-us address > a img {
     width: 100%;
 }
 
-address > p {
+#find-us address > p {
     color: var(--primary-purple, #938ACB);
     font-size: 2.2vw;
     text-align: center;
 }
 
-address .location {
+#find-us address .location {
     display: flex;
     align-items: flex-start;
     gap: 17px;
 }
 
-address .phone {
+#find-us address .phone {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-address div p {
+#find-us address div p {
     color: var(--primary-grey, #4F4B4C);
     font-family: 'Nunito';
     font-size: 1.7vw;
 }
 
-address .links {
+#find-us address .links {
     display: flex;
     justify-content: space-between;
 }
 
-address .links a {
+#find-us address .links a {
     width: 42%;
 }
 
-address .links img {
+#find-us address .links img {
     width: 100%;
+}
+
+footer-component {
+    height: 212px;
+    background-image: url(assets/footer-background.png);
+    display: flex;
+    justify-content: space-between;
 }
