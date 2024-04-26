@@ -96,11 +96,11 @@ main {
 }
 
 .locations .convoy {
-    background-image: url("./assets/menu/convoy_location.svg");
+    background-image: url("./assets/menu/convoy_location.jpg");
 }
 
 .locations .national_city {
-    background-image: url("./assets/menu/national_city_location.svg");
+    background-image: url("./assets/menu/national_city_location.jpg");
 }
 
 .locations .national_city, .locations .convoy {
