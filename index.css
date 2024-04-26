@@ -102,13 +102,13 @@ h2 {
     letter-spacing: 2px;
 }
 
-section > div {
+.separator {
     display: flex;
     width: 82.4vw;
     align-items: center;
 }
 
-section > div::before {
+.separator::before {
     content: "";
     height: 3px;
     background-color: #C9CBE3;
@@ -116,7 +116,7 @@ section > div::before {
     flex-grow: 1;
 }
 
-section > div::after {
+.separator::after {
     content: "";
     height: 3px;
     background-color: #C9CBE3;
@@ -195,6 +195,77 @@ section > div::after {
     flex-direction: column;
     align-items: center;
     height: 989px;
+}
+
+#boba-bar #wrapper {
+    width: 100vw;
+    margin-top: 72px;
+    overflow: hidden;
+}
+
+#boba-bar #gallery {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: 
+    "g1 g2 g3 g6"
+    "g1 g4 g5 g6";
+    align-items: center;
+    column-gap: 5.2vw;
+    row-gap: 38px;
+    width: 1871px;
+    padding-left: 5.2vw;
+    padding-right: 5.2vw;
+    transform: translate(calc(44.8vw - 935.5px));
+    /* transform: translate(calc(0px)); */
+    /* transform: translate(calc(89.6vw - 1871px)); */
+}
+
+#g1 {
+    grid-area: g1;
+}
+
+#g2 {
+    grid-area: g2;
+}
+
+#g3 {
+    grid-area: g3;
+}
+
+#g4 {
+    grid-area: g4;
+}
+
+#g5 {
+    grid-area: g5;
+}
+
+#g6 {
+    grid-area: g6;
+}
+
+#boba-bar #buttons {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#boba-bar #buttons button {
+    background-color: transparent;
+    border: none;
+}
+
+#boba-bar #left-button {
+    position: relative;
+    left: 99px;
+    bottom: 426px;
+}
+
+#boba-bar #right-button {
+    position: relative;
+    right: 99px;
+    bottom: 426px;
 }
 
 #find-us {

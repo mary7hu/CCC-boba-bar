@@ -6,6 +6,7 @@
     <title>Boba Bar</title>
     <link href="index.css" rel="stylesheet"/>
     <script src="component.js"></script>
+    <script type="module" src="index.js"></script>
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
             <a href="https://www.instagram.com/"><img src="assets/ins-filled-icon.svg" alt="Boba Bar Logo" height="163"/><span>INSTAGRAM</span></a>
         </nav>
         <section id="customer-favorites">
-            <div>
+            <div class="separator">
                 <h2>CUSTOMER FAVORITES</h2>
             </div>
             <ol>
@@ -33,7 +34,7 @@
             </ol>
         </section>
         <section id="opportunities">
-            <div>
+            <div class="separator">
                 <h2>OPPORTUNITIES AT BOBA BAR</h2>
             </div>
             <p>
@@ -45,12 +46,26 @@
             <a href="career.html">JOIN OUR TEAM</a>
         </section>
         <section id="boba-bar">
-            <div>
+            <div class="separator">
                 <h2>#BOBA BAR</h2>
+            </div>
+            <div id="wrapper">
+                <div id="gallery">
+                    <img src="assets/g1-Brookie-Puffle.png" alt="gallery image of Brookie Puffle" id="g1"/>
+                    <img src="assets/g2-Perfect-matcha.png" alt="gallery image of Perfect Matcha" id="g2"/>
+                    <img src="assets/g3.png" alt="gallery image" id="g3"/>
+                    <img src="assets/g4-Shirt-Logo-front.png" alt="gallery image of Shirt Logo" id="g4"/>
+                    <img src="assets/g5-Strawberry-Cheesecake.png" alt="gallery image of Strawberry Cheesecake" id="g5"/>
+                    <img src="assets/g6-Affogato.png" alt="gallery image of Affogato" id="g6"/>
+                </div>
+                <div id="buttons">
+                    <button id="left-button"><img src="assets/left-arrow.svg" alt="left arrow" width="110"/></button>
+                    <button id="right-button"><img src="assets/right-arrow.svg" alt="right arrow" width="110"/></button>
+                </div>
             </div>
         </section>
         <section id="find-us">
-            <div>
+            <div class="separator">
                 <h2>FIND US</h2>
             </div>
             <address>

@@ -133,6 +133,7 @@ class FooterComponent extends HTMLElement {
                     "address1 address2";
                 row-gap: 19px;
                 margin-top: 24px;
+                padding-left: 30px;
             }
             
             nav {
