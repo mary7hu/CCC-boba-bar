@@ -29,13 +29,20 @@ html {
 /* For nav component js */
 nav-component {
     display: grid;
-    grid-template-columns: 13.8vw auto 11.2vw;
+    grid-template-columns: 13.8vw auto 13.8vw;
     background: linear-gradient(180deg, #F3ECFF 42.71%, #F1EFF3 100%);
     height: 80px;
     align-items: center;
     justify-items: center;
     font-family: 'Nunito';
     font-size: 20px;
+}
+
+footer-component {
+    height: 212px;
+    background-image: url(assets/footer-background.png);
+    display: flex;
+    justify-content: space-between;
 }
 
 main {
