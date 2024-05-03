@@ -35,9 +35,15 @@ nav-component {
     font-size: 20px;
 }
 
+hamburger-component {
+    display: none;
+}
+
 #home {
     height: 666px;
-    background-image: url(assets/home-image.webp);
+    background-image: url(assets/home-image-d.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -62,30 +68,37 @@ h1 {
 
 main nav {
     display: flex;
-    height: 612px;
     align-items: center;
     padding-left: 8.8vw;
 }
 
 main nav a {
     width: 24.3vw;
-    height: 340px;
+    height: 23.6vw;
     box-shadow: 4px 4px 0px 0px #BA9EC9, 8px 8px 0px 0px #6467AE;
     border: 1.4px solid var(--primary-purple, #938ACB);
     border-radius: 43.6px;
+    margin-top: 136px;
+    margin-bottom: 136px;
     margin-right: 4.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(assets/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-decoration: none;
     color: #FFF;
     font-size: 2.2vw;
 }
 
+main nav a img {
+    height: 47.9%;
+}
+
 main nav a span {
-    margin-top: 40px;
+    margin-top: 11.7%;
     background-color: var(--primary-purple, #938ACB);
     padding: 16px 32px;
     border-radius: 10.9px;
@@ -129,6 +142,10 @@ h2 {
     flex-direction: column;
     align-items: center;
     height: 740px;
+}
+
+#t-best-sellers {
+    display: none;
 }
 
 #customer-favorites ol {
@@ -339,4 +356,186 @@ footer-component {
     background-image: url(assets/footer-background.png);
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    nav-component {
+        display: none;
+    }
+
+    hamburger-component {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F3ECFF;
+        height: 48px;
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+
+    #home {
+        height: 585px;
+        background-image: url(assets/home-image-t.png);
+    }
+
+    h1 {
+        font-size: 48px;
+        left: 48px;
+        top: 150px;
+    }
+
+    #home p {
+        width: 204px;
+        font-size: 24px;
+        left: 48px;
+        top: 168px;
+    }
+
+    main nav {
+        padding-left: 4.7vw;
+    }
+
+    main nav a {
+        width: 26vw;
+        height: 25.4vw;
+        margin-top: 74px;
+        margin-bottom: 74px;
+        margin-right: 6.25vw;
+    }
+
+    main nav a span {
+        margin-top: 6.1%;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .separator {
+        width: 90.6vw;
+    }
+
+    #customer-favorites {
+        height: 575px;
+    }
+
+    #d-customer-favorites {
+        display: none;
+    }
+
+    #t-best-sellers {
+        display: flex;
+    }
+
+    #customer-favorites ol {
+        margin-top: -43px;
+    }
+
+    #customer-favorites li > img:first-child {
+        width: 65px;
+        right: 83.5px;
+        top: 84px;
+    }
+
+    #customer-favorites li > img:nth-child(2) {
+        width: 200px;
+    }
+
+    #opportunities p {
+        width: 90.6vw;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    #opportunities a {
+        margin-top: 45px;
+        padding: 12px 24px;
+        font-size: 24px;
+        border-radius: 8px;
+        margin-bottom: 75px;
+    }
+
+    #boba-bar {
+        height: 771px;
+    }
+
+    #boba-bar #wrapper {
+        margin-top: 58px;
+    }
+
+    #boba-bar #gallery {
+        row-gap: 36px;
+        column-gap: 36px;
+        width: 1460px;
+        padding-left: 36px;
+        padding-right: 36px;
+        transform: translate(calc(50vw - 766px));
+        /* translate(calc(0px)); */
+        /* translate(calc(100vw - 1532px)); */
+    }
+
+    #g1, #g6 {
+        width: 416px;
+        height: 556px;
+    }
+    
+    #g2, #g3, #g4, #g5 {
+        width: 260px;
+    }
+
+    #boba-bar #left-button {
+        left: 50px;
+        bottom: 350px;
+    }
+
+    #boba-bar #right-button {
+        right: 50px;
+        bottom: 350px;
+    }
+
+    #find-us {
+        padding-bottom: 85px;
+    }
+
+    #find-us address {
+        width: 90.6vw;
+        column-gap: 53px;
+        margin-top: 62px;
+    }
+
+    #find-us address > p {
+        font-size: 2.5vw;
+    }
+
+    #find-us address .location img {
+        width: 21px;
+    }
+
+    #find-us address .phone img {
+        width: 30px;
+    }
+
+    #find-us address div p {
+        font-size: 2vw;
+    }
+
+    footer-component {
+        height: 171px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    main nav a span{
+        padding: 12px 20px;
+    }
+
+    #customer-favorites li > img:first-child {
+        width: 60px;
+        right: 73.5px;
+        top: 79px;
+    }
+
+    #customer-favorites li > img:nth-child(2) {
+        width: 180px;
+    }
 }

@@ -120,8 +120,9 @@ class FooterComponent extends HTMLElement {
         const sheet = new CSSStyleSheet();
         sheet.replaceSync(`
             img {
-                margin-top: 41.5px;
+                align-self: center;
                 margin-left: 5vw;
+                height: 129px;
             }
             
             #footer-content {
@@ -131,7 +132,7 @@ class FooterComponent extends HTMLElement {
                 grid-template-areas:
                     "nav nav"
                     "address1 address2";
-                row-gap: 19px;
+                row-gap: 20px;
                 margin-top: 24px;
                 padding-left: 30px;
             }
@@ -165,48 +166,49 @@ class FooterComponent extends HTMLElement {
                 font-style: normal;
                 font-family: 'Nunito';
                 font-size: 18px;
-                margin-left: 6px;
+                margin-left: 18px;
                 margin-bottom: 6px;
             }
             
             #address1 #time1 {
-                margin-left: 21px;
+                margin-left: 33px;
             }
             
             #address1 #time2 {
-                margin-left: 32px;
+                margin-left: 46px;
             }
             
             #address1 #phone-num1 {
-                margin-left: 70px;
+                margin-left: 82px;
                 margin-top: 6px;
                 text-decoration: underline;
             }
             
             #address2 {
                 grid-area: address2;
-            }
-            
-            #address2 #time3 {
-                margin-left: 58px;
-            }
-            
-            #address2 #time4 {
-                margin-left: 87px;
-            }
-            
-            #address2 #phone-num2 {
-                margin-left: 100px;
-                margin-top: 6px;
-                text-decoration: underline;
+                text-align: right;
             }
             
             #address2 address {
                 font-style: normal;
                 font-family: 'Nunito';
                 font-size: 18px;
-                margin-left: 16px;
+                margin-right: 18px;
                 margin-bottom: 6px;
+            }
+            
+            #address2 #time3 {
+                margin-right: 85px;
+            }
+            
+            #address2 #time4 {
+                margin-right: 59px;
+            }
+            
+            #address2 #phone-num2 {
+                margin-right: 101px;
+                margin-top: 6px;
+                text-decoration: underline;
             }
             
             ul {
@@ -244,6 +246,240 @@ class FooterComponent extends HTMLElement {
                 width: 28px;
                 display: flex;
             }
+
+            @media screen and (max-width: 1024px) {
+                img {
+                    margin-left: 2.6vw;
+                    height: 111px;
+                }
+            
+                #footer-content {
+                    grid-template-rows: 27px auto;
+                    row-gap: 13px;
+                    margin-top: 16px;
+                    padding-left: 0;
+                }
+            
+                nav a {
+                    font-size: 20px;
+                }
+            
+                 p {
+                    font-size: 16px;
+                }
+            
+                #address1 address {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+            
+                #address1 #phone-num1 {
+                    margin-top: 5px;
+                }
+            
+                #address2 address {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+            
+                #address2 #phone-num2 {
+                    margin-top: 5px;
+                }
+            
+                ul {
+                    margin-top: 16px;
+                    margin-right: 2.6vw;
+                    padding: 0;
+                }
+            
+                li {
+                    padding-left: 2.3vw;
+                }
+            }
+
+            @media screen and (max-width: 820px) {
+                img {
+                    height: 90px;
+                }
+
+                nav a {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                #address1 address {
+                    font-size: 13px;
+                    margin-left: 10px;
+                }
+
+                #address1 #time1 {
+                    margin-left: 27px;
+                }
+
+                #address1 #time2 {
+                    margin-left: 36px;
+                }
+
+                #address1 #phone-num1 {
+                    margin-left: 62px;
+                }
+
+                #address2 address {
+                    font-size: 13px;
+                    margin-right: 10px;
+                }
+
+                #address2 #time3 {
+                    margin-right: 74px;
+                }
+
+                #address2 #time4 {
+                    margin-right: 54px;
+                }
+
+                #address2 #phone-num2 {
+                    margin-right: 80px;
+                }
+
+                li {
+                    padding-left: 1.5vw;
+                }
+            }
+        `)
+        shadow.adoptedStyleSheets = [sheet];
+    }
+}
+
+class HamburgerComponent extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        const shadow = this.attachShadow({ mode: "open" });
+        shadow.innerHTML = `
+            <img src="assets/penguin.webp" alt="Penguin Logo" height="32"/>
+            <nav id="hamburgerMenu">
+                <input type="checkbox" aria-hidden="true"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="menu.html"><li>Menu</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="catering.html"><li>Catering</li></a>
+                    <a href="merch.html"><li>Merch</li></a>
+                    <a href="career.html"><li>Career</li></a>
+                </ul>
+            </nav>
+        `;
+        const sheet = new CSSStyleSheet();
+        sheet.replaceSync(`
+            #hamburgerMenu {
+                position: relative;
+                z-index: 1;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+        
+            #hamburgerMenu a {
+                text-decoration: none;
+                color: var(--primary-grey, #4F4B4C);
+                transition: color 0.3s ease;
+            }
+        
+            #hamburgerMenu a:hover {
+                color: var(--primary-purple, #938ACB);
+            }
+        
+            #hamburgerMenu input {
+                width: 33px;
+                height: 22px;
+                position: absolute;
+                cursor: pointer;
+                opacity: 0;
+                z-index: 2;
+            }
+        
+            #hamburgerMenu span {
+                display: block;
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                position: relative;
+                background: var(--primary-grey, #4F4B4C);
+                border-radius: 3px;
+                z-index: 1;
+                transform-origin: 4px 0px;
+                transition: transform 0.3s ease-in-out,
+                            opacity 0.3s ease;
+            }
+        
+            #hamburgerMenu span:first-child {
+                transform-origin: 0% 0%;
+            }
+        
+            #hamburgerMenu span:nth-last-child(2) {
+                transform-origin: 0% 100%;
+                margin-bottom: 0;
+            }
+        
+            #hamburgerMenu input:checked ~ span {
+                opacity: 1;
+                transform: rotate(45deg) translate(-2px, -1px);
+            }
+        
+            #hamburgerMenu input:checked ~ span:nth-last-child(3) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
+        
+            #hamburgerMenu input:checked ~ span:nth-last-child(2) {
+                transform: rotate(-45deg) translate(0, -1px);
+            }
+        
+            #menu {
+                position: absolute;
+                width: 300px;
+                padding-left: 30px;    
+                background: #F3ECFF;
+                list-style-type: none;
+                transform: translate(-241px, 0);
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+                margin: 0;
+            }
+        
+            #menu li {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 20px;
+                font-family: 'Nunito';
+            }
+        
+            #hamburgerMenu input:checked ~ ul {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            @media screen and (max-width: 720px) {
+                #menu {
+                    width: 150px;
+                    transform: translate(-123px, 0);
+                }
+
+                #menu li {
+                    font-size: 16px;
+                    padding-top: 0;
+                    padding-bottom: 8px;
+                }
+            }
         `)
         shadow.adoptedStyleSheets = [sheet];
     }
@@ -251,3 +487,4 @@ class FooterComponent extends HTMLElement {
 
 customElements.define('nav-component', NavComponent);
 customElements.define('footer-component', FooterComponent);
+customElements.define('hamburger-component', HamburgerComponent);
