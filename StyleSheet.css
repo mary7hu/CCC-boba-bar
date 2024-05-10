@@ -152,6 +152,8 @@ p {
 }
 
 
+
+
 #about {
     height: 927px;
 }
@@ -201,6 +203,11 @@ p {
 
 #support_us::before {
     border-top: 2px;
+}
+
+#merch_pickup {
+    position: center;
+    text-align: center;
 }
 
 #join_us {
