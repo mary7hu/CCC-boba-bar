@@ -40,21 +40,21 @@ class NavComponent extends HTMLElement {
             }
             
             #ins-icon {
-                background: url(assets/ins-icon.svg);
+                background: url(../../assets/ins-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #fb-icon {
-                background: url(assets/fb-icon.svg);
+                background: url(../../assets/fb-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #yelp-icon {
-                background: no-repeat url(assets/yelp-icon.svg);
+                background: no-repeat url(../../assets/yelp-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
@@ -238,21 +238,21 @@ class FooterComponent extends HTMLElement {
             }
             
             #ins-icon {
-                background: url(assets/ins-icon.svg);
+                background: url(../../assets/ins-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #fb-icon {
-                background: url(assets/fb-icon.svg);
+                background: url(../../assets/fb-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #yelp-icon {
-                background: no-repeat url(assets/yelp-icon.svg);
+                background: no-repeat url(../../assets/yelp-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
@@ -577,21 +577,21 @@ class MobileFooter extends HTMLElement {
             }
             
             #ins-icon {
-                background: url(assets/ins-icon.svg);
+                background: url(../../assets/ins-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #fb-icon {
-                background: url(assets/fb-icon.svg);
+                background: url(../../assets/fb-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #yelp-icon {
-                background: no-repeat url(assets/yelp-icon.svg);
+                background: no-repeat url(../../assets/yelp-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
