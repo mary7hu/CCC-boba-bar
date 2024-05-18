@@ -12,13 +12,13 @@ class NavComponent extends HTMLElement {
                 <li><a href="https://www.instagram.com/"><span id="yelp-icon"></span></a></li>
             </ul>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="menu.html">Menu</a>
+                <a href="../home/index.html">Home</a>
+                <a href="../menu/menu.html">Menu</a>
                 <a href="about.html">About</a>
-                <img src="assets/penguin.webp" alt="Penguin Logo" height="64">
-                <a href="catering.html">Catering</a>
-                <a href="merch.html">Merch</a>
-                <a href="career.html">Career</a>
+                <img src="../../assets/penguin.webp" alt="Penguin Logo" height="64">
+                <a href="../catering/catering.html">Catering</a>
+                <a href="../merch/merch.html">Merch</a>
+                <a href="../career/career.html">Career</a>
             </nav>
         `;
         const sheet = new CSSStyleSheet();
@@ -94,15 +94,15 @@ class FooterComponent extends HTMLElement {
     connectedCallback() {
         const shadow = this.attachShadow({ mode: "open" });
         shadow.innerHTML = `
-            <img src="assets/logo.png" alt="Boba Bar Logo" height="129"/>
+            <img src="../../assets/logo.png" alt="Boba Bar Logo" height="129"/>
             <div id="footer-content">
                 <nav>
-                    <a href="home.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">About</a>
-                    <a href="catering.html">Catering</a>
-                    <a href="merch.html">Merch</a>
-                    <a href="career.html">Career</a>
+                    <a href="../home/index.html">Home</a>
+                    <a href="../menu/menu.html">Menu</a>
+                    <a href="../about/about.html">About</a>
+                    <a href="../catering/catering.html">Catering</a>
+                    <a href="../merch/merch.html">Merch</a>
+                    <a href="../career/career.html">Career</a>
                 </nav>
                 <div id="address1">
                     <address>4619 Convoy St, San Diego, CA</address>
@@ -372,19 +372,19 @@ class HamburgerComponent extends HTMLElement {
     connectedCallback() {
         const shadow = this.attachShadow({ mode: "open" });
         shadow.innerHTML = `
-            <img src="assets/penguin.webp" alt="Penguin Logo" height="32"/>
+            <img src="../../assets/penguin.webp" alt="Penguin Logo" height="32"/>
             <nav id="hamburgerMenu">
                 <input type="checkbox" aria-hidden="true"/>
                 <span></span>
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="menu.html"><li>Menu</li></a>
-                    <a href="about.html"><li>About</li></a>
-                    <a href="catering.html"><li>Catering</li></a>
-                    <a href="merch.html"><li>Merch</li></a>
-                    <a href="career.html"><li>Career</li></a>
+                    <a href="../home/index.html"><li>Home</li></a>
+                    <a href="../menu/menu.html"><li>Menu</li></a>
+                    <a href="../about/about.html"><li>About</li></a>
+                    <a href="../catering/catering.html"><li>Catering</li></a>
+                    <a href="../merch/merch.html"><li>Merch</li></a>
+                    <a href="../career/career.html"><li>Career</li></a>
                 </ul>
             </nav>
         `;
@@ -508,14 +508,14 @@ class MobileFooter extends HTMLElement {
     connectedCallback() {
         const shadow = this.attachShadow({ mode: "open" });
         shadow.innerHTML = `
-            <img src="assets/logo.png" alt="Boba Bar Logo"/>
+            <img src="../../assets/logo.png" alt="Boba Bar Logo"/>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">About</a>
-                <a href="catering.html">Catering</a>
-                <a href="merch.html">Merch</a>
-                <a href="career.html">Career</a>
+                <a href="../home/index.html">Home</a>
+                <a href="../menu/menu.html">Menu</a>
+                <a href="../about/about.html">About</a>
+                <a href="../catering/catering.html">Catering</a>
+                <a href="../merch/merch.html">Merch</a>
+                <a href="../career/career.html">Career</a>
             </nav>
             <ul>
                 <li><a href="https://www.instagram.com/"><span id="ins-icon"></span></a></li>

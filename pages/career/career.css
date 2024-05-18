@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+main {
+    position: relative;
+    padding: 0 clamp(71px, -185px + 25vw, 175px);
+    /* overflow: hidden; */
+}
+
+h1 {
+    font-family: 'MoonBold';
+    color: var(--primary-purple, #938ACB);
+    font-size: clamp(48px, 8.6px + 3.8vw, 64px);
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 56px;
+}
+
+#career-intro {
+    margin-top: 61px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: clamp(26px, -35.5px + 6vw, 51px);
+    row-gap: clamp(11px, 3.6px + 0.7vw, 14px);
+}
+
+h2 {
+    color: var(--primary-grey, #4F4B4C);
+    font-size: clamp(32px, -7.4px + 3.8vw, 48px);
+}
+
+#career-intro img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: clamp(292px, 225.5px + 6.5vw, 319px);
+}
+
+#career-intro p, #career-intro p span {
+    color: #000;
+    font-size: clamp(20px, 10.2px + 0.96vw, 24px);
+}
+
+#career-intro p span {
+    background-color: #94D9D6;
+}
+
+#career-application {
+    padding-bottom: 760px;
+}
+
+#career-application h2 {
+    margin-top: 56px;
+    margin-bottom: 30px;
+}
+
+#career-application a {
+    font-size: clamp(20px, 10.2px + 0.96vw, 24px);
+}
+
+main > img {
+    position: absolute;
+    z-index: -1;
+}
+
+main > img:first-of-type {
+    top: 0;
+    left: 0;
+}
+
+main > img:nth-last-child(2) {
+    top: 0;
+    right: 0;
+}
+
+main > img:nth-last-child(1) {
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 0 clamp(45px, -16.6px + 8.6vw, 71px);
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    #career-intro {
+        column-gap: 26px;
+        row-gap: 11px;
+    }
+
+    h2 {
+        font-size: clamp(24px, 5.1px + 2.6vw, 32px);
+    }
+
+    #career-intro img {
+        width: 292px;
+    }
+
+    #career-intro p, #career-intro p span {
+        font-size: clamp(16px, 6.5px + 1.3vw, 20px);
+    }
+
+    #career-application a {
+        font-size: clamp(16px, 6.5px + 1.3vw, 20px);
+    }
+
+    main > img:first-of-type {
+        width: clamp(300px, -204.5px + 70vw, 513px);
+    }
+    
+    main > img:nth-last-child(2) {
+        width: clamp(390px, -268.4px + 91.5vw, 668px);
+    }
+    
+    main > img:nth-last-child(1) {
+        width: clamp(292px, -200.6px + 68.4vw, 500px);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        padding: 0 45px;
+        text-align: center;
+    }
+
+    h1 {
+        /* font-size: 48px; */
+        font-size: 28px;
+    }
+
+    #career-intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #career-intro img {
+        /* width: 292px; */
+        width: 256px;
+    }
+
+    #career-intro p, #career-intro p span {
+        font-size: 16px;
+    }
+
+    #career-application a {
+        font-size: 16px;
+    }
+
+    main > img:first-of-type {
+        /* width: 300px; */
+        display: none;
+    }
+    
+    main > img:nth-last-child(2) {
+        /* width: 390px; */
+        display: none;
+    }
+    
+    main > img:nth-last-child(1) {
+        /* width: 292px; */
+        display: none;
+    }
+}

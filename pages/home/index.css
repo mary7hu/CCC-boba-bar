@@ -1,47 +1,12 @@
-:root {
-    --primary-purple: #938ACB;
-    --primary-grey: #4F4B4C;
-}
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'MoonBold';
 }
 
-@font-face {
-    font-family: 'Nunito';
-    src: url(assets/Nunito-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'MoonLight';
-    src: url(assets/Moon-Light.otf);
-}
-
-@font-face {
-    font-family: 'MoonBold';
-    src: url(assets/Moon-Bold.otf);
-}
-
-nav-component {
-    display: grid;
-    grid-template-columns: 13.8vw auto 13.8vw;
-    background: linear-gradient(180deg, #F3ECFF 42.71%, #F1EFF3 100%);
-    height: 80px;
-    align-items: center;
-    justify-items: center;
-    font-family: 'Nunito';
-    font-size: 20px;
-}
-
-hamburger-component {
-    display: none;
-}
-
 #home {
     height: 666px;
-    background-image: url(assets/home-image-d.webp);
+    background-image: url(../../assets/home/home-image-d.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -85,7 +50,7 @@ main nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(assets/cloud.png);
+    background-image: url(../../assets/home/cloud.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-decoration: none;
@@ -113,28 +78,6 @@ h2 {
     border-top: 3px solid #C9CBE3;
     padding: 5px 0;
     letter-spacing: 2px;
-}
-
-.separator {
-    display: flex;
-    width: 82.4vw;
-    align-items: center;
-}
-
-.separator::before {
-    content: "";
-    height: 3px;
-    background-color: #C9CBE3;
-    margin-right: 20px;
-    flex-grow: 1;
-}
-
-.separator::after {
-    content: "";
-    height: 3px;
-    background-color: #C9CBE3;
-    margin-left: 20px;
-    flex-grow: 1;
 }
 
 #t-best-sellers {
@@ -352,37 +295,10 @@ h2 {
     width: 100%;
 }
 
-footer-component {
-    height: 212px;
-    background-image: url(assets/footer-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-}
-
-mobile-footer {
-    display: none;
-}
-
 @media screen and (max-width: 1024px) {
-    nav-component {
-        display: none;
-    }
-
-    hamburger-component {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #F3ECFF;
-        height: 48px;
-        padding-left: 56px;
-        padding-right: 56px;
-    }
-
     #home {
         height: 585px;
-        background-image: url(assets/home-image-t.png);
+        background-image: url(../../assets/home/home-image-t.png);
     }
 
     h1 {
@@ -416,10 +332,6 @@ mobile-footer {
 
     h2 {
         font-size: 48px;
-    }
-
-    .separator {
-        width: 90.6vw;
     }
 
     #d-customer-favorites {
@@ -523,10 +435,6 @@ mobile-footer {
     #find-us address div p {
         font-size: 2vw;
     }
-
-    footer-component {
-        height: 171px;
-    }
 }
 
 @media screen and (max-width: 820px) {
@@ -546,14 +454,9 @@ mobile-footer {
 }
 
 @media screen and (max-width: 720px) {
-    hamburger-component {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-
     #home {
         height: 66.1vw;
-        background-image: url(assets/home-image-p.jpeg);
+        background-image: url(../../assets/home/home-image-p.jpeg);
         background-size: 100vw;
         position: relative;
     }
@@ -608,10 +511,6 @@ mobile-footer {
 
     h2 {
         font-size: clamp(28px, 21.6px + 2vw, 36px);
-    }
-
-    .separator::before, .separator::after {
-        height: 0;
     }
 
     #customer-favorites ol {
@@ -763,21 +662,5 @@ mobile-footer {
 
     #find-us address .links a {
         width: clamp(100px, 20px + 25vw, 200px);
-    }
-
-    footer-component {
-        display: none;
-    }
-
-    mobile-footer {
-        display: flex;
-        background-image: url(assets/footer-background.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: clamp(16px, 12.8px + 1vw, 20px);
-        padding: 7px 33px;
     }
 }
