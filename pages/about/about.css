@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     --w: calc(90vw);
+    box-sizing: border-box;
 }
 
 header {
@@ -216,7 +217,23 @@ p {
 }
 
 #support_us h3 {
-    margin-top: 1126px;
+    margin-top: 175px;
+}
+
+#window-gallery {
+    margin-top: 59px;
+    position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 112px;
+    grid-column-gap: 0px;
+}
+
+#window-gallery img {
+    width: 547px;
+    height: 408px;
+    display: block;
 }
 
 #merch_pickup {

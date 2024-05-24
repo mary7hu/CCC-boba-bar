@@ -120,7 +120,7 @@ class FooterComponent extends HTMLElement {
             <ul>
                 <li><a href="https://www.instagram.com/"><span id="ins-icon"></span></a></li>
                 <li><a href="https://www.facebook.com/"><span id="fb-icon"></span></a></li>
-                <li><a href="https://www.instagram.com/"><span id="yelp-icon"></span></a></li>
+                <li><a href="https://www.yelp.com/"><span id="yelp-icon"></span></a></li>
             </ul>
         `;
         const sheet = new CSSStyleSheet();
