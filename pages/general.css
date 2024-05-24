@@ -1,21 +1,22 @@
 :root {
     --primary-purple: #938ACB;
+    --secondary-purple: #C9C4E5;
     --primary-grey: #4F4B4C;
 }
 
 @font-face {
     font-family: 'Nunito';
-    src: url(../../assets/Nunito-Regular.ttf);
+    src: url(../assets/Nunito-Regular.ttf);
 }
 
 @font-face {
     font-family: 'MoonLight';
-    src: url(../../assets/Moon-Light.otf);
+    src: url(../assets/Moon-Light.otf);
 }
 
 @font-face {
     font-family: 'MoonBold';
-    src: url(../../assets/Moon-Bold.otf);
+    src: url(../assets/Moon-Bold.otf);
 }
 
 nav-component {
@@ -57,7 +58,7 @@ hamburger-component {
 
 footer-component {
     height: 212px;
-    background-image: url(../../assets/footer-background.png);
+    background-image: url(../assets/footer-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -108,7 +109,7 @@ mobile-footer {
 
     mobile-footer {
         display: flex;
-        background-image: url(../../assets/footer-background.png);
+        background-image: url(../assets/footer-background.png);
         background-repeat: no-repeat;
         background-size: cover;
         flex-direction: column;

@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu Page</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="menu_page.css">
-    <script src="component.js"></script>
-    <script src="menu_page.js"></script>
+    <title>Boba Bar</title>
+    <link href="../general.css" rel="stylesheet"/>
+    <link href="menu.css" rel="stylesheet"/>
+    <script src="../component.js"></script>
+    <script type="module" src="menu.js"></script>
 </head>
 <body>
     <header>
         <nav-component></nav-component>
+        <hamburger-component></hamburger-component>
     </header>
     <main>
         <div class="menu_heading">MENU</div>
         <div class="order_online">
             <div class="text">Order Online</div>
-            <a href="#" class="menu_pdf_link">Menu PDF</a>
+            <a href="" class="menu_pdf_link">Menu PDF</a>
         </div>
         <div class="locations">
             <div class="convoy"> 
                 <div class="inner_elems">
                     <div class="text">CONVOY</div>
-                    <a href="#" class="order_btn">ORDER</a>  
+                    <a href="../home/index.html#convoy-location" class="order_btn">ORDER</a>  
                 </div>  
             </div>
             <div class="national_city">
                 <div class="inner_elems">
                     <div class="text">NATIONAL CITY</div>
-                    <a href="#" class="order_btn">ORDER</a>
+                    <a href="../home/index.html#national-city-location" class="order_btn">ORDER</a>
                 </div>                                              
             </div>
         </div>
@@ -42,8 +45,7 @@
         </div>
         
         <section class="menu_sections" id="puffles">
-            <div class="section_header">
-                <!-- &nbsp; is a blank character -->
+            <div class="separator">
                 <h2>PUFFLES</h2>
             </div>
             <div class="section_body" id="puffle_items">
@@ -52,8 +54,7 @@
         </section>
 
         <section class="menu_sections" id="milk_tea">
-            <div class="section_header">
-                <!-- &nbsp; is a blank character -->
+            <div class="separator">
                 <h2>MILK TEA</h2>
             </div>
             <div class="grid_heading">A creamy beverage served over ice or made hot.</div>
@@ -80,8 +81,7 @@
         </section>
 
         <section class="menu_sections" id="teas">
-            <div class="section_header">
-                <!-- &nbsp; is a blank character -->
+            <div class="separator">
                 <h2>TEAS</h2>
             </div>
             <h3>UNFLAVORED TEAS</h3>
@@ -108,8 +108,7 @@
         </section>
 
         <section class="menu_sections" id="blended_drinks">
-            <div class="section_header">
-                <!-- &nbsp; is a blank character -->
+            <div class="separator">
                 <h2>BLENDED DRINKS</h2>
             </div>
             <h3>SLUSHIES</h3>
@@ -147,8 +146,7 @@
         </section>
 
         <section class="menu_sections" id="brown_sugar">
-            <div class="section_header">
-                <!-- &nbsp; is a blank character -->
+            <div class="separator">
                 <h2>BROWN SUGAR</h2>
             </div>
             <div class="grid-menu">
@@ -161,8 +159,7 @@
         </section>
 
         <section class="menu_sections" id="coffee">
-            <div class="section_header">
-                <!-- &nbsp; is a blank character -->
+            <div class="separator">
                 <h2>COFFEE</h2>
             </div>
             <div class="grid-menu">
@@ -173,8 +170,7 @@
         </section>
 
         <section class="menu_sections" id="frozen_desserts">
-            <div class="section_header">
-                <!-- &nbsp; is a blank character -->
+            <div class="separator">
                 <h2>FROZEN DESSERTS</h2>
             </div>
             <div class="grid-menu">
@@ -187,6 +183,7 @@
     </main>
     <footer>
         <footer-component></footer-component>
+        <mobile-footer></mobile-footer>
     </footer>
 </body>
 </html>

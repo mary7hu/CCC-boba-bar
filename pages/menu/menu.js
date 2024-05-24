@@ -1,43 +1,43 @@
 // Define menu item objects
 const puffleItemsData = [
     {
-        imgSrc: "./assets/menu/Classy.jpg",
+        imgSrc: "../../assets/menu/classy.jpg",
         title: "Classy Puffle",
         price: "$9",
         description: "Plain puffle, vanilla custard, drizzle"
     },
     {
-        imgSrc: "./assets/menu/Cereal Milk.jpg",
+        imgSrc: "../../assets/menu/cereal-milk.jpg",
         title: "Cereal Milk",
         price: "$10.25",
         description: "Plain puffle, vanilla custard, fruity pebbles, frosted flakes, cookie crisps, condensed milk"
     },
     {
-        imgSrc: "./assets/menu/Paradise.jpg",
+        imgSrc: "../../assets/menu/paradise.jpg",
         title: "Paradise",
         price: "$10.25",
         description: "Plain puffle, swirl of vanilla & dole whip, strawberries, bananas, mangoes, honey drizzle"
     },
     {
-        imgSrc: "./assets/menu/Perfect matcha.jpg",
+        imgSrc: "../../assets/menu/perfect-matcha.jpg",
         title: "Perfect Matcha",
         price: "$11",
         description: "Green tea puffle, green tea & vanilla custard, red bean, mochi, pocky sticks, condensed milk drizzle"
     },
     {
-        imgSrc: "./assets/menu/Strawberry Cheesecake.jpg",
+        imgSrc: "../../assets/menu/strawberry-cheesecake.jpg",
         title: "Strawberry Cheesecake",
         price: "$10.25",
         description: "Plain puffle, vanilla custard, graham crackers, cheesecake bites, strawberries & pocky sticks"
     },
     {
-        imgSrc: "./assets/menu/Smores drizzle.jpg",
+        imgSrc: "../../assets/menu/smores-drizzle.jpg",
         title: "Do you want S’more?",
         price: "$11",
         description: "Chocolate chip puffle, chocolate & vanilla custard, graham crackers, marshmallows, chocolate drizzle"
     },
     {
-        imgSrc: "./assets/menu/Brookie Puffle.jpg",
+        imgSrc: "../../assets/menu/brookie-puffle.jpg",
         title: "Brookie Puffle",
         price: "$11.50",
         description: "Oreo chocolate chip puffle, cookies and cream & vanilla custard, brownie bites, cookie crisps, chocolate pocky & nutella drizzle"
