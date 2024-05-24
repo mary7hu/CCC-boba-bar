@@ -36,7 +36,7 @@ ul {
 }
 
 li {    
-    padding-left: 16px;
+    gap: 16px;
 }
 
 .ins-icon {
@@ -150,6 +150,15 @@ p {
     padding-top: 67px;
 }
 
+#about img.logo {
+    position: relative;
+    top: 15.44rem;
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
 #our_story {
     height: 1831px;
 }
@@ -174,8 +183,10 @@ p {
 }
 
 #story_frame_2 {
-    position: absolute;
-    right: 0px;
+    position: relative;
+    top: 14.87rem;
+
+    margin-left:auto;
     width: 61.1875rem;
     height: 28.5625rem;
     background: #F3EDFC;
@@ -184,7 +195,64 @@ p {
 
 #story_frame_3 {
     position: relative;
-    top: 28.5625rem;
+    top: 19.37rem;
+}
+
+#our_story li {
+    float: left;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#our_story li.title {
+    position: relative;
+    top: 1.875rem;
+    left: 5.75rem;
+    gap: 1.75rem;
+}
+
+#our_story li.description-1, li.description-2, li.description-3 {    
+    position: relative;
+    gap:4.69rem;
+}
+
+#our_story li.description-1 {
+    top: 5.41rem;
+    left: 8rem;
+}
+
+#our_story li.description-1 p {
+    width: 29.5625rem;
+    height: 18.625rem;
+}
+
+#our_story li.description-2 {
+    top: 5.88rem;
+    left: 6.06rem;
+}
+
+#our_story li.description-2 p {
+    width: 28.5625rem;
+    height: 18rem;
+}
+
+#our_story li.description-3 {
+    top: 5.38rem;
+    left: 8rem;
+}
+
+#our_story li.description-3 p {
+    width: 28.3125rem;
+    height: 16.5rem;
+}
+
+#our_story img.about-image {
+    width: 17.3125rem;
+    height: 17.3125rem;
+    flex-shrink: 0;
+    display: block;
+    box-shadow: 4px 4px 0px 0px #BA9EC9, 8px 8px 0px 0px #6467AE;
 }
 
 #support_us_title {
@@ -217,7 +285,7 @@ p {
 }
 
 #support_us h3 {
-    margin-top: 175px;
+    margin-left: 1.75rem;
 }
 
 #support_us ol {
