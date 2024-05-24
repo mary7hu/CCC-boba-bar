@@ -7,7 +7,6 @@
 main {
     position: relative;
     padding: 0 clamp(71px, -185px + 25vw, 175px);
-    /* overflow: hidden; */
 }
 
 h1 {
@@ -71,14 +70,26 @@ main > img:first-of-type {
     left: 0;
 }
 
-main > img:nth-last-child(2) {
+main > img:nth-last-child(5) {
     top: 0;
     right: 0;
 }
 
-main > img:nth-last-child(1) {
+main > img:nth-last-child(4) {
     bottom: 0;
     left: 0;
+}
+
+main > img:nth-last-child(3) {
+    display: none;
+}
+
+main > img:nth-last-child(2) {
+    display: none;
+}
+
+main > img:nth-last-child(1) {
+    display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -115,30 +126,31 @@ main > img:nth-last-child(1) {
         width: clamp(300px, -204.5px + 70vw, 513px);
     }
     
-    main > img:nth-last-child(2) {
+    main > img:nth-last-child(5) {
         width: clamp(390px, -268.4px + 91.5vw, 668px);
     }
     
-    main > img:nth-last-child(1) {
+    main > img:nth-last-child(4) {
         width: clamp(292px, -200.6px + 68.4vw, 500px);
     }
 }
 
 @media screen and (max-width: 720px) {
     main {
-        padding: 0 45px;
+        padding: 0 clamp(32px, 21.6px + 3.25vw, 45px);
         text-align: center;
     }
 
     h1 {
-        /* font-size: 48px; */
-        font-size: 28px;
+        font-size: clamp(28px, 12px + 5vw, 48px);
     }
 
     #career-intro {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 50px;
+        row-gap: 24px;
     }
 
     h2 {
@@ -146,12 +158,23 @@ main > img:nth-last-child(1) {
     }
 
     #career-intro img {
-        /* width: 292px; */
-        width: 256px;
+        width: clamp(256px, 133.1px + 38.4vw, 409.6px);
+        height: clamp(157px, 81.6px + 23.6vw, 251.2px);
+        object-fit: cover;
     }
 
     #career-intro p, #career-intro p span {
         font-size: 16px;
+        margin-top: -10px;
+    }
+
+    #career-application {
+        padding-bottom: 300px;
+    }
+
+    #career-application h2 {
+        margin-top: 40px;
+        margin-bottom: 14px;
     }
 
     #career-application a {
@@ -159,17 +182,32 @@ main > img:nth-last-child(1) {
     }
 
     main > img:first-of-type {
-        /* width: 300px; */
         display: none;
+    }
+    
+    main > img:nth-last-child(5) {
+        display: none;
+    }
+    
+    main > img:nth-last-child(4) {
+        display: none;
+    }
+
+    main > img:nth-last-child(3) {
+        display: block;
+        top: 0;
+        left: 0;
     }
     
     main > img:nth-last-child(2) {
-        /* width: 390px; */
-        display: none;
+        display: block;
+        top: 0;
+        right: 0;
     }
     
     main > img:nth-last-child(1) {
-        /* width: 292px; */
-        display: none;
+        display: block;
+        bottom: 0;
+        left: 0;
     }
 }
