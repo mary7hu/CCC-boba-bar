@@ -1,0 +1,390 @@
+/* Desktop */
+
+html {
+    /* font-size: 62.5%;*/
+    font-size: 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Adding fonts from assets */
+@font-face {
+    font-family: 'Nunito';
+    src: url(assets/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MoonLight';
+    src: url(assets/Moon-Light.otf);
+}
+
+@font-face {
+    font-family: 'MoonBold';
+    src: url(assets/Moon-Bold.otf);
+}
+
+/* For nav component js */
+nav-component {
+    display: grid;
+    grid-template-columns: 13.8vw auto 13.8vw;
+    background: linear-gradient(180deg, #F3ECFF 42.71%, #F1EFF3 100%);
+    height: 80px;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Nunito';
+    font-size: 20px;
+}
+
+footer-component {
+    height: 212px;
+    background-image: url(assets/footer-background.png);
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    max-width: 120rem;
+    margin-inline: auto;
+    padding: 0 4.8rem;
+}
+
+.menu_heading {
+    color: var(--Primary-Purple, #938ACB);
+    font-family: MoonBold;
+    font-size: 6.4em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+
+    text-align: center;
+    margin-top: 4.7rem;
+}
+
+.order_online {
+    display: flex;
+    gap: 3.3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.order_online .text {
+    color: var(--Primary-Purple, #938ACB);
+    font-family: Nunito;
+    font-size: 4.8em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.menu_pdf_link {
+    background-color: #94D9D6;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 0.75rem 4rem;
+
+    color: var(--Primary-Grey, #4F4B4C);
+    font-family: Nunito;
+    font-size: 2.4em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.8rem;
+    margin-top: 3.8rem;
+}
+
+.locations .convoy {
+    background-image: url("./assets/menu/convoy_location.jpg");
+}
+
+.locations .national_city {
+    background-image: url("./assets/menu/national_city_location.jpg");
+}
+
+.locations .national_city, .locations .convoy {
+    max-width: 57rem;
+    min-width: 44.5rem;
+    height: 29.1rem;
+    flex-grow: 1;
+
+    background-position: center center;
+
+    /* padding: 0 11rem; */
+    /* This makes it so that the padding of the element will be included as part of its size (width & height) */
+    /* box-sizing: border-box; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_elems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    /* inside box is defined by relative units to keep alignment when font size is changed */
+    width: 35rem;
+    height: 22rem;
+}
+
+.convoy .text, .national_city .text {
+    color: #FFF;
+    /* Note: changed shadow color to be less harsh */
+    text-shadow: 0px 4px 6px rgba(45, 45, 45, 0.5);
+    text-align: center;
+
+    font-family: MoonBold;
+    font-size: 6.4em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.order_btn {
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 2.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    padding: 1rem 4rem;
+
+    border-radius: 2rem;
+    border: 0.4rem solid var(--Secondary-Purple, #C9C4E5);
+    box-shadow: 0px 4px 4px 0px rgba(157, 157, 157, 0.25);
+}
+
+a.order_btn:hover {
+    background: var(--Secondary-Purple, #C9C4E5);
+    border-color: #C9C4E5;
+    color: var(--Primary-Grey, #4F4B4C);
+}
+
+a.order_btn:active {
+    background: var(--Primary-Purple, #938ACB);
+    color: var(--Primary-Grey, #4F4B4C);
+    border-color: #938ACB;
+}
+
+.filter {
+    display: flex;
+    gap: 1.1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2.6rem;
+    margin-bottom: 8.4rem;
+}
+
+.filter_btn {
+    text-decoration: none;
+    border-radius: 2rem;
+    border: 0.2rem solid #000;
+
+    padding: 1.2rem 2.4rem;
+
+    color: #000;
+    background-color: #ffffff;
+    font-family: Nunito;
+    font-size: 2.4em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* use not() to make sure hover effect only applies to nonselected btns */
+.filter_btn:not(.selected):hover {
+    color: #938ACB;
+    border-color: #938ACB; 
+}
+
+/* apply class in js when button is pressed and will remain active */
+.selected {
+    color: #ffffff;
+    background-color: #938ACB;
+    border-color: #938ACB;
+}
+
+.menu_sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6.3rem;
+    margin-top: 5.2rem;
+}
+
+.section_header::before {
+    content: "";
+    height: 3px;
+    background-color: #C9CBE3;
+    /* margin-right: 20px; */
+    flex-grow: 1;
+}
+
+.section_header::after {
+    content: "";
+    height: 3px;
+    background-color: #C9CBE3;
+    /* margin-left: 20px; */
+    flex-grow: 1;
+}
+
+h2 {
+    text-align: center;
+    font-family: MoonBold;
+    color: var(--primary-purple, #938ACB);
+    font-size: 6.4em;
+    border-bottom: 3px solid #C9CBE3;
+    border-top: 3px solid #C9CBE3;
+    padding: 0.5rem 0;
+    letter-spacing: 2px;
+}
+
+/* flex box version */
+/* .section_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 40px;
+} */
+
+/* grid version */
+.section_body {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(36.8rem, 1fr));
+    justify-items: center;
+}
+
+.item_card {
+    width: 36.8rem;
+    /* height: 56.3rem; */
+    /* height: auto; */
+    margin-bottom: 8.4rem;
+}
+
+.item_card img {
+    max-width: 100%;
+}
+
+.item_title {
+    color: #000;
+    font-family: Nunito;
+    font-size: 2.8em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2rem;
+}
+
+.item_desc {
+    color: #000;
+    font-family: Nunito;
+    font-size: 2.4em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0.5rem;
+}
+
+.grid_heading {
+    color: #000;
+    font-family: Nunito;
+    font-size: 2.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2.8rem;
+}
+
+h3 {
+    color: var(--Primary-Grey, #4F4B4C);
+    font-family: MoonBold;
+    font-size: 3.2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.grid-menu {
+    color: var(--Primary-Grey, #4F4B4C);
+    font-family: Nunito;
+    font-size: 2.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(33%, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(27.5rem, 1fr));
+    gap: 0 5rem;
+
+    margin-bottom: 8.4rem;
+}
+
+/* 1024px, 64rem for 62.5% on font */
+@media screen and (max-width: 51.25rem) {
+    /* html {
+        font-size: 40%;
+    } */
+    main {
+        max-width: 57rem;
+    }
+    .order_online {
+        justify-content: center;
+    }
+    .section_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item_card {
+        display: flex;
+        gap: 3rem;
+        width: 100%;
+        margin-bottom: 4.2rem;
+        align-items: flex-start;
+    }
+    .item_card img {
+        max-width: 20rem;
+    }
+    .item_title {
+        margin-top: 0;
+        font-size: 4em;
+    }
+
+    h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .grid_heading {
+        text-align: center;
+    }
+    .grid-menu {
+        text-align: center;
+        grid-row-gap: 1.5rem;
+    }
+}
+
+/* @media screen and (max-width: 39.375rem) {
+    html {
+        font-size: 30%;
+    }
+} */

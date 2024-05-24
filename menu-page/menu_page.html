@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="menu_page.css">
+    <script src="component.js"></script>
+    <script src="menu_page.js"></script>
+</head>
+<body>
+    <header>
+        <nav-component></nav-component>
+    </header>
+    <main>
+        <div class="menu_heading">MENU</div>
+        <div class="order_online">
+            <div class="text">Order Online</div>
+            <a href="#" class="menu_pdf_link">Menu PDF</a>
+        </div>
+        <div class="locations">
+            <div class="convoy"> 
+                <div class="inner_elems">
+                    <div class="text">CONVOY</div>
+                    <a href="#" class="order_btn">ORDER</a>  
+                </div>  
+            </div>
+            <div class="national_city">
+                <div class="inner_elems">
+                    <div class="text">NATIONAL CITY</div>
+                    <a href="#" class="order_btn">ORDER</a>
+                </div>                                              
+            </div>
+        </div>
+        <div class="filter">
+            <button class="filter_btn" data-target="puffles">Puffles</button>
+            <button class="filter_btn" data-target="milk_tea">Milk Tea</button>
+            <button class="filter_btn" data-target="teas">Teas</button>
+            <button class="filter_btn" data-target="blended_drinks">Blended Drinks</button>
+            <button class="filter_btn" data-target="brown_sugar">Brown Sugar</button>
+            <button class="filter_btn" data-target="coffee">Coffee</button>
+            <button class="filter_btn" data-target="frozen_desserts">Frozen Desserts</button>
+        </div>
+        
+        <section class="menu_sections" id="puffles">
+            <div class="section_header">
+                <!-- &nbsp; is a blank character -->
+                <h2>PUFFLES</h2>
+            </div>
+            <div class="section_body" id="puffle_items">
+                <!-- Dynamically load json objects here -->
+            </div>
+        </section>
+
+        <section class="menu_sections" id="milk_tea">
+            <div class="section_header">
+                <!-- &nbsp; is a blank character -->
+                <h2>MILK TEA</h2>
+            </div>
+            <div class="grid_heading">A creamy beverage served over ice or made hot.</div>
+            <div class="grid-menu">
+                <div>Black Milk Tea</div>
+                <div>Earl Grey</div>
+                <div>Lavender</div>
+                <div>Jasmine Green Tea</div>
+                <div>Coconut</div>
+                <div>Strawberry</div>
+                <div>Thai Tea</div>
+                <div>Mango</div>
+                <div>Brown Sugar</div>
+                <div>Coffee</div>
+                <div>Rose</div>
+                <div>Wintermelon</div>
+                <div>Almond</div>
+                <div>Taro</div>
+                <div>Honey Oolong</div>
+                <div>Matcha</div>
+                <div>Honey</div>
+                <div>Roasted Oolong</div>
+            </div>
+        </section>
+
+        <section class="menu_sections" id="teas">
+            <div class="section_header">
+                <!-- &nbsp; is a blank character -->
+                <h2>TEAS</h2>
+            </div>
+            <h3>UNFLAVORED TEAS</h3>
+            <div class="grid_heading">Fresh teas brewed daily. Can be served sweetened or unsweetened.</div>
+            <div class="grid-menu">
+                <div>Jasmine Green Tea</div>
+                <div>Black Tea</div>
+                <div>Roasted Oolong Black Tea</div>
+            </div>
+            <h3>FLAVORED TEAS</h3>
+            <div class="grid_heading">Fresh teas brewed daily mixed with a flavoring of choice.</div>
+            <div class="grid-menu">
+                <div>Peach</div>
+                <div>Pineapple</div>
+                <div>Strawberry</div>
+                <div>Green Apple</div>
+                <div>Mango</div>
+                <div>Rose</div>
+                <div>Passion Fruit</div>
+                <div>Lychee</div>
+                <div>Wintermelon</div>
+                <div>Honey</div>
+            </div>
+        </section>
+
+        <section class="menu_sections" id="blended_drinks">
+            <div class="section_header">
+                <!-- &nbsp; is a blank character -->
+                <h2>BLENDED DRINKS</h2>
+            </div>
+            <h3>SLUSHIES</h3>
+            <div class="grid_heading">A blended beverage that does not contain dairy. Consists of Ice, water, and flavor of choice.</div>
+            <div class="grid-menu">
+                <div>Peach</div>
+                <div>Pineapple</div>
+                <div>Rose</div>
+                <div>Green Apple</div>
+                <div>Mango</div>
+                <div>Wintermelon</div>
+                <div>Passion fruit</div>
+                <div>Lychee</div>
+                <div>Honey</div>
+                <div>Strawberry</div>
+            </div>
+            <h3>SMOOTHIES</h3>
+            <div class="grid_heading">A blended beverage that contains ice, ice cream, a couple dairy products, and flavoring.</div>
+            <div class="grid-menu">
+                <div>Taro</div>
+                <div>Thai Tea</div>
+                <div>Mango</div>
+                <div>Avocado</div>
+                <div>Pistachio</div>
+                <div>Banana</div>
+                <div>Coconut</div>
+                <div>Chocolate Chip</div>
+                <div>Dragonfruit</div>
+                <div>Green Tea</div>
+                <div>Cookies & Cream</div>
+                <div>Oreo</div>
+                <div>Honeydew</div>
+                <div>Strawberry</div>
+            </div>
+        </section>
+
+        <section class="menu_sections" id="brown_sugar">
+            <div class="section_header">
+                <!-- &nbsp; is a blank character -->
+                <h2>BROWN SUGAR</h2>
+            </div>
+            <div class="grid-menu">
+                <div>Brown Sugar Marble</div>
+                <div>Brown Sugar Milo</div>
+                <div>Oreo BSM + Cheese Cream</div>
+                <div>Ube Brown Sugar Marble</div>
+                <div>Brown Sugar Latte</div>
+            </div>
+        </section>
+
+        <section class="menu_sections" id="coffee">
+            <div class="section_header">
+                <!-- &nbsp; is a blank character -->
+                <h2>COFFEE</h2>
+            </div>
+            <div class="grid-menu">
+                <div>Black Coffee (No Milk)</div>
+                <div>Milk Coffee</div>
+                <div>Coffee Frap</div>
+            </div>
+        </section>
+
+        <section class="menu_sections" id="frozen_desserts">
+            <div class="section_header">
+                <!-- &nbsp; is a blank character -->
+                <h2>FROZEN DESSERTS</h2>
+            </div>
+            <div class="grid-menu">
+                <div>Vanilla Custard</div>
+                <div>Spicy Dole</div>
+                <div>Affogato</div>
+                <div>Dole Soft Serve</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <footer-component></footer-component>
+    </footer>
+</body>
+</html>
