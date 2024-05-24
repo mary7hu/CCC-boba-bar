@@ -1,16 +1,16 @@
-﻿@font-face {
+@font-face {
     font-family: 'Inter';
-    src: url('Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    src: url('../../assets/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Moon';
-    src: url('Moon/Moon Bold.otf') format('opentype');
+    src: url('../../assets/Moon/Moon Bold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Nunito';
-    src: url('Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+    src: url('../../assets/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
 }
 * {
     margin: 0;
@@ -39,21 +39,21 @@ li {
 }
 
 .ins-icon {
-    background: center no-repeat url("Source Files/insta.svg");
+    background: center no-repeat url("../../assets/Source Files/insta.svg");
     height: 28px;
     width: 28px;
     display: flex;
 }
 
 .fb-icon {
-    background: center no-repeat url("Source Files/fb.svg");
+    background: center no-repeat url("../../assets/Source Files/fb.svg");
     height: 28px;
     width: 28px;
     display: flex;
 }
 
 .yelp-icon {
-    background: center no-repeat url("Source Files/yelp.svg");
+    background: center no-repeat url("../../assets/Source Files/yelp.svg");
     height: 28px;
     width: 28px;
     display: flex;
@@ -76,7 +76,7 @@ hamburger-component {
 
 footer-component {
     height: 212px;
-    background-image: url(assets/footer-background.png);
+    background-image: url(../../assets/footer-background.png);
     display: flex;
     justify-content: space-between;
 }
@@ -103,7 +103,6 @@ nav img {
 /*Body*/
 
 h1 {
-    position: center;
     text-align: center;
     color: #938ACB;
     font-size: 64px;
@@ -115,27 +114,18 @@ h1 {
 }
 
 h2 {
-    position: center;
     text-align: center;
-    color: #938ACB;
+    color: var(--primary-purple, #938ACB);
     font-size: 64px;
-    font-family: 'Moon';
-    font-weight: 700;
     border-bottom: 3px solid #C9CBE3;
     border-top: 3px solid #C9CBE3;
     padding: 5px 0;
     letter-spacing: 2px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h2::before, h2::after {
-    /*asdfasdf*/
+    font-family: 'Moon';
 }
 
 h3 {
     color: #4F4B4C;
-
     font-family: Moon;
     font-size: 2rem;
     font-style: normal;
@@ -151,9 +141,6 @@ p {
     line-height: normal;
 }
 
-
-
-
 #about {
     height: 927px;
 }
@@ -166,8 +153,14 @@ p {
     height: 1831px;
 }
 
+#our_story_title {
+    position: center;
+    text-align: center;
+}
+
+
 #story_frame_1, #story_frame_3 {
-    left: 10px;
+    left: 0px;
     width: 61.1875rem;
     height: 28.5625rem;
     background: #F3EDFC;
@@ -181,7 +174,7 @@ p {
 
 #story_frame_2 {
     position: absolute;
-    right: 0;
+    right: 0px;
     width: 61.1875rem;
     height: 28.5625rem;
     background: #F3EDFC;
@@ -193,16 +186,37 @@ p {
     top: 28.5625rem;
 }
 
-#our_story_title, #support_us_title {
+#support_us_title {
     width: 30.75rem;
 }
 
 #support_us {
-    height: 1536px;
+    height: 1600px;
+    position: center;
+    text-align: center;
 }
 
 #support_us::before {
     border-top: 2px;
+}
+
+#support_us a {
+    display: inline-block;
+    padding: 18px 32px;
+    font-size: clamp(20px, 16.8px + 1vw, 24px);
+    margin-top: 56px;
+    background-color: #6467AE;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 136px;
+    font-family: 'Moon';
+}
+
+#support_us h3 {
+    margin-top: 1126px;
 }
 
 #merch_pickup {
@@ -211,9 +225,35 @@ p {
 }
 
 #join_us {
-    height: 460px;
+    height: 479px;
+    position: center;
+    text-align: center;
 }
 
 #join_us_title {
     width: 20.5rem;
+}
+
+#join_us p {
+    margin-top: 56px;
+    font-family: Nunito;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#join_us a {
+    display: inline-block;
+    padding: 18px 32px;
+    font-size: clamp(20px, 16.8px + 1vw, 24px);
+    margin-top: 56px;
+    background-color: #6467AE;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 136px;
+    font-family: 'Moon';
 }

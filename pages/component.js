@@ -12,17 +12,23 @@ class NavComponent extends HTMLElement {
                 <li><a href="https://www.instagram.com/"><span id="yelp-icon"></span></a></li>
             </ul>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="menu.html">Menu</a>
+                <a href="../home/index.html">Home</a>
+                <a href="../menu/menu.html">Menu</a>
                 <a href="about.html">About</a>
-                <img src="assets/penguin.webp" alt="Penguin Logo" height="64">
-                <a href="catering.html">Catering</a>
-                <a href="merch.html">Merch</a>
-                <a href="career.html">Career</a>
+                <img src="../../assets/penguin.webp" alt="Penguin Logo" height="64">
+                <a href="../catering/catering.html">Catering</a>
+                <a href="../merch/merch.html">Merch</a>
+                <a href="../career/career.html">Career</a>
             </nav>
         `;
         const sheet = new CSSStyleSheet();
         sheet.replaceSync(`
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'MoonBold';
+            }
+
             ul {
                 display: flex;
                 list-style-type: none;
@@ -34,21 +40,21 @@ class NavComponent extends HTMLElement {
             }
             
             #ins-icon {
-                background: url(assets/ins-icon.svg);
+                background: url(../../assets/ins-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #fb-icon {
-                background: url(assets/fb-icon.svg);
+                background: url(../../assets/fb-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #yelp-icon {
-                background: no-repeat url(assets/yelp-icon.svg);
+                background: no-repeat url(../../assets/yelp-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
@@ -88,15 +94,15 @@ class FooterComponent extends HTMLElement {
     connectedCallback() {
         const shadow = this.attachShadow({ mode: "open" });
         shadow.innerHTML = `
-            <img src="assets/logo.png" alt="Boba Bar Logo" height="129"/>
+            <img src="../../assets/logo.png" alt="Boba Bar Logo" height="129"/>
             <div id="footer-content">
                 <nav>
-                    <a href="home.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">About</a>
-                    <a href="catering.html">Catering</a>
-                    <a href="merch.html">Merch</a>
-                    <a href="career.html">Career</a>
+                    <a href="../home/index.html">Home</a>
+                    <a href="../menu/menu.html">Menu</a>
+                    <a href="../about/about.html">About</a>
+                    <a href="../catering/catering.html">Catering</a>
+                    <a href="../merch/merch.html">Merch</a>
+                    <a href="../career/career.html">Career</a>
                 </nav>
                 <div id="address1">
                     <address>4619 Convoy St, San Diego, CA</address>
@@ -119,6 +125,12 @@ class FooterComponent extends HTMLElement {
         `;
         const sheet = new CSSStyleSheet();
         sheet.replaceSync(`
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'MoonBold';
+            }
+
             img {
                 align-self: center;
                 margin-left: 5vw;
@@ -155,7 +167,6 @@ class FooterComponent extends HTMLElement {
             p {
                 font-family: 'Nunito';
                 font-size: 18px;
-                margin: 0;
             }
             
             #address1 {
@@ -227,21 +238,21 @@ class FooterComponent extends HTMLElement {
             }
             
             #ins-icon {
-                background: url(assets/ins-icon.svg);
+                background: url(../../assets/ins-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #fb-icon {
-                background: url(assets/fb-icon.svg);
+                background: url(../../assets/fb-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
             }
             
             #yelp-icon {
-                background: no-repeat url(assets/yelp-icon.svg);
+                background: no-repeat url(../../assets/yelp-icon.svg);
                 height: 28px;
                 width: 28px;
                 display: flex;
@@ -289,7 +300,6 @@ class FooterComponent extends HTMLElement {
                 ul {
                     margin-top: 16px;
                     margin-right: 2.6vw;
-                    padding: 0;
                 }
             
                 li {
@@ -362,24 +372,30 @@ class HamburgerComponent extends HTMLElement {
     connectedCallback() {
         const shadow = this.attachShadow({ mode: "open" });
         shadow.innerHTML = `
-            <img src="assets/penguin.webp" alt="Penguin Logo" height="32"/>
+            <img src="../../assets/penguin.webp" alt="Penguin Logo" height="32"/>
             <nav id="hamburgerMenu">
                 <input type="checkbox" aria-hidden="true"/>
                 <span></span>
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="menu.html"><li>Menu</li></a>
-                    <a href="about.html"><li>About</li></a>
-                    <a href="catering.html"><li>Catering</li></a>
-                    <a href="merch.html"><li>Merch</li></a>
-                    <a href="career.html"><li>Career</li></a>
+                    <a href="../home/index.html"><li>Home</li></a>
+                    <a href="../menu/menu.html"><li>Menu</li></a>
+                    <a href="../about/about.html"><li>About</li></a>
+                    <a href="../catering/catering.html"><li>Catering</li></a>
+                    <a href="../merch/merch.html"><li>Merch</li></a>
+                    <a href="../career/career.html"><li>Career</li></a>
                 </ul>
             </nav>
         `;
         const sheet = new CSSStyleSheet();
         sheet.replaceSync(`
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'MoonBold';
+            }
+
             #hamburgerMenu {
                 position: relative;
                 z-index: 1;
@@ -453,7 +469,6 @@ class HamburgerComponent extends HTMLElement {
                 visibility: hidden;
                 opacity: 0;
                 transition: opacity 0.3s ease-in-out;
-                margin: 0;
             }
         
             #menu li {
@@ -485,6 +500,142 @@ class HamburgerComponent extends HTMLElement {
     }
 }
 
+class MobileFooter extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        const shadow = this.attachShadow({ mode: "open" });
+        shadow.innerHTML = `
+            <img src="../../assets/logo.png" alt="Boba Bar Logo"/>
+            <nav>
+                <a href="../home/index.html">Home</a>
+                <a href="../menu/menu.html">Menu</a>
+                <a href="../about/about.html">About</a>
+                <a href="../catering/catering.html">Catering</a>
+                <a href="../merch/merch.html">Merch</a>
+                <a href="../career/career.html">Career</a>
+            </nav>
+            <ul>
+                <li><a href="https://www.instagram.com/"><span id="ins-icon"></span></a></li>
+                <li><a href="https://www.facebook.com/"><span id="fb-icon"></span></a></li>
+                <li><a href="https://www.instagram.com/"><span id="yelp-icon"></span></a></li>
+            </ul>
+            <div id="address1">
+                <address>4619 Convoy St, San Diego,<br/>CA 92111</address>
+                <p id="phone-num1">(858) 256-0506</p>
+                <p id="time1">Sun - Thu &nbsp&nbsp 11am - 10pm</p>
+                <p id="time2">Fri & Sat &nbsp&nbsp 11am - 10:30pm</p>
+            </div>
+            <div id="address2">
+                <address>1132 E Plaza Blvd, National City,<br/>CA 91950</address>
+                <p id="phone-num2">(619) 717-9560</p>
+                <p id="time3">M - Sat &nbsp&nbsp 11am - 10pm</p>
+                <p id="time4">Sun &nbsp&nbsp 11am - 10:30pm</p>
+            </div>
+        `;
+        const sheet = new CSSStyleSheet();
+        sheet.replaceSync(`
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'MoonBold';
+            }
+
+            img {
+                width: clamp(75px, 35px + 12.5vw, 125px);
+            }
+            
+            nav {
+                display: grid;
+                grid-template-rows: auto auto;
+                grid-template-columns: auto auto auto;
+                row-gap: 8px;
+                column-gap: clamp(20px, 4px + 5vw, 40px);
+                margin-right: 8px;
+            }
+            
+            nav a{
+                text-decoration: none;
+                color: var(--primary-grey, #4F4B4C);
+                font-family: 'Nunito';
+                font-size: clamp(18px, 16.4px + 0.5vw, 20px);
+            }
+            
+            ul {
+                display: flex;
+                list-style-type: none;
+            }
+            
+            li {
+                padding-left: 32px;
+            }
+            
+            li:first-of-type {
+                padding-left: 0;
+            }
+            
+            #ins-icon {
+                background: url(../../assets/ins-icon.svg);
+                height: 28px;
+                width: 28px;
+                display: flex;
+            }
+            
+            #fb-icon {
+                background: url(../../assets/fb-icon.svg);
+                height: 28px;
+                width: 28px;
+                display: flex;
+            }
+            
+            #yelp-icon {
+                background: no-repeat url(../../assets/yelp-icon.svg);
+                height: 28px;
+                width: 28px;
+                display: flex;
+            }
+            
+            address {
+                font-style: normal;
+                font-family: 'Nunito';
+                font-size: 16px;
+                text-align: center;
+            }
+            
+            p {
+                font-family: 'Nunito';
+                font-size: clamp(16px, 14.4px + 0.5vw, 18px);
+                text-align: center;
+            }
+            
+            address + p {
+                margin-bottom: clamp(16px, 12.8px + 1vw, 20px);
+                text-decoration: underline;
+            }
+            
+            #address1 p:nth-child(3) {
+                margin-right: clamp(16.5px, 14.9px + 0.5vw, 18.5px);
+            }
+            
+            #address1 p:nth-child(4) {
+                margin-left: clamp(16.5px, 14.9px + 0.5vw, 18.5px);
+            }
+            
+            #address2 p:nth-child(3) {
+                margin-right: clamp(24.5px, 22.1px + 0.75vw, 27.5px);
+            }
+            
+            #address2 p:nth-child(4) {
+                margin-left: clamp(24.5px, 22.1px + 0.75vw, 27.5px);
+            }
+        `)
+        shadow.adoptedStyleSheets = [sheet];
+    }
+}
+
 customElements.define('nav-component', NavComponent);
 customElements.define('footer-component', FooterComponent);
 customElements.define('hamburger-component', HamburgerComponent);
+customElements.define('mobile-footer', MobileFooter);
